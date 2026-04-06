@@ -1,0 +1,16 @@
+Client-Side: Responsible for everything a user sees and interacts with directly, such as buttons, animations, and form validation. It makes the web page responsive by handling actions locally without needing a server trip
+Server-Side: Acts as the "brains" behind the scenes, handling tasks that require centralized control or security. This includes user authentication (login), processing payments, and querying large database.
+
+HTML (HyperText Markup Language) defines the structure of a web page,It is used to build the basic layout of the website such as,Headings,Paragraphs,Images,Links
+
+HTML is the skeleton of the website.
+
+CSS (Cascading Style Sheets) is used to style and design the web page,It controls things like,Colors,Fonts,Layout,Spacing
+
+CSS makes the website look beautiful and organized.
+
+JavaScript is used to add interactivity and behavior to a web page,Buttons that respond when clicked,Dynamic content updates,Form validation,Animations
+
+JavaScript makes the website interactive and alive.
+
+I divided the website into multiple pages to keep the project clean, organized, and easier to manage.
