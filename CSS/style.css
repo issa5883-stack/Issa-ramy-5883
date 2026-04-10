@@ -1,0 +1,132 @@
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; /* لون خلفية هادئ */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* الهيدر والتنقل */
+header {
+    background-color: #1a1a1a; /* أسود فخم */
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+nav {
+    background: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff; /* لون التفاعل */
+}
+
+/* المحتوى الرئيسي */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+/* تنسيق الصورة */
+/* تنسيق الصورة المحدث */
+/* تنسيق الصورة المحدث مع إطار ملون */
+img {
+    border-radius: 50%; /* صورة دائرية */
+    border: 5px solid RoyalBlue; /* إطار ملون عريض، يمكنك تغيير 'RoyalBlue' لأي لون آخر */
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* ظل ناعم، تم زيادة التباين قليلاً */
+    
+    /* التكبير */
+    width: 250px; /* العرض */
+    height: 250px; /* الارتفاع، اجعله مساويًا للعرض للحفاظ على الدائرة */
+    
+    /* للوضوح */
+    transform: scale(1.2); /* تكبير بنسبة 1.2x */
+    transition: transform 0.3s ease; /* إضافة تأثير انتقالي سلس */
+}
+
+/* تأثير عند تمرير الفأرة (اختياري) */
+img:hover {
+    transform: scale(1.3); /* تكبير إضافي عند تمرير الفأرة */
+    border-color: Goldenrod; /* تغيير لون الإطار عند تمرير الفأرة (مثلاً، لون ذهبي) */
+}
+
+/* تنسيق القوائم والجداول */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+ul li {
+    background: #e9ecef;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f3f5;
+}
+
+/* التذييل */
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #777;
+}
