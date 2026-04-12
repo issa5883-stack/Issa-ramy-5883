@@ -65,7 +65,7 @@ h2 {
 /* تنسيق الصورة */
 /* تنسيق الصورة المحدث */
 /* تنسيق الصورة المحدث مع إطار ملون */
-img {
+.profile {
     border-radius: 50%; /* صورة دائرية */
     border: 5px solid RoyalBlue; /* إطار ملون عريض، يمكنك تغيير 'RoyalBlue' لأي لون آخر */
     display: block;
@@ -80,6 +80,13 @@ img {
     /* للوضوح */
     transform: scale(1.2); /* تكبير بنسبة 1.2x */
     transition: transform 0.3s ease; /* إضافة تأثير انتقالي سلس */
+}
+.icon  {
+    align-items: center;
+    width: 80px; /* عرض الشعار */
+    height: 80px; /* ارتفاع تلقائي للحفاظ على نسبة الأبعاد */
+    margin-bottom: 1rem; /* مسافة بين الشعار والعناصر الأخرى */
+    margin: 25px;;
 }
 
 /* تأثير عند تمرير الفأرة (اختياري) */
@@ -97,7 +104,7 @@ ul {
 }
 
 ul li {
-    background: #e9ecef;
+    background: #4d9cea;
     padding: 8px 15px;
     border-radius: 20px;
     text-align: center;
@@ -129,4 +136,52 @@ footer {
     padding: 2rem;
     font-size: 0.9rem;
     color: #777;
+}
+/* تنسيق شبكة الصور */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* ترتيب تلقائي حسب حجم الشاشة */
+    gap: 20px; /* مسافة بين الصور */
+    padding: 20px 0;
+}
+
+/* تنسيق صور المعرض */
+.gallery-grid img {
+    width: 100%; /* تأخذ عرض العمود بالكامل */
+    height: 250px; /* توحيد الطول لجميع الصور */
+    object-fit: cover; /* قص الصورة بذكاء لتملأ المساحة دون تشويه */
+    border-radius: 15px; /* حواف دائرية أنيقة */
+    border: 3px solid transparent; /* إطار شفاف للتحضير للتأثير */
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(45deg, #d4ae00, #1a1a1a) border-box; /* إطار متدرج بين الذهبي والأسود */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* حركة ناعمة */
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* تأثير عند تمرير الفأرة على صور المعرض */
+.gallery-grid img:hover {
+    transform: translateY(-10px) scale(1.05); /* ترتفع للأعلى قليلاً مع تكبير بسيط */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2); /* زيادة الظل لإعطاء شعور بالعمق */
+    filter: brightness(1.1); /* زيادة إضاءة الصورة قليلاً */
+}
+
+/* تخصيص العنوان */
+h2 {
+    color: #1a1a1a;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* أضفنا كلمة .gallery-grid قبل h2 */
+.gallery-grid-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #d4ae00; 
+    border-radius: 2px;
 }
